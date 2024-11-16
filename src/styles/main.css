@@ -755,6 +755,9 @@ input::placeholder {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1.75rem;
+  display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 .new-product-section__head {
