@@ -7,12 +7,18 @@ export function slider(){
 }
 
 new Swiper(".bannSlider", {
-  slidesPerView: 1.7,
+  slidesPerView: 1,
   spaceBetween: 21,
   navigation: {
     nextEl: ".advantages-section__info-block .button.next",
     prevEl: ".advantages-section__info-block .button.prev",
   },
+  breakpoints: {
+    769: {
+      slidesPerView: 1.7,
+      spaceBetween: 21,
+    }
+  }
 });
 
 new Swiper(".brandsSlider", {
