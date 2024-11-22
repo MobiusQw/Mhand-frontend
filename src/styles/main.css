@@ -885,10 +885,6 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1.75rem;
-  display: flex;
-  position: relative;
-  z-index: 1;
-  grid-column: span 5;
 }
 .advantages-section__info-block__additional::-webkit-scrollbar {
   display: none;
@@ -900,12 +896,32 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
     overflow-x: auto;
   }
 }
-.advantages-section__info-block__additional__item,
-.advantages-section__info-block__additional card-adv {
+.advantages-section__info-block__additional__wrapper {
   overflow: hidden;
   border-radius: 1rem;
   padding: 1.75rem 1.75rem 5.417rem;
   position: relative;
+  background-color: #FFFFFF;
+}
+.advantages-section__info-block__additional__wrapper__head {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  grid-column: span 5;
+}
+.advantages-section__info-block__additional__wrapper__descriptions {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.001em;
+}
+@media (max-width: 768px) {
+  .advantages-section__info-block__additional__wrapper__descriptions {
+    font-size: 1rem;
+  }
+}
+.advantages-section__info-block__additional__wrapper img {
+  float: right;
 }
 
 .new-product-section__head {
