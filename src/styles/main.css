@@ -892,6 +892,7 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 @media (max-width: 768px) {
   .advantages-section__info-block__additional {
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     overflow-x: auto;
   }
@@ -903,25 +904,37 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
   position: relative;
   background-color: #FFFFFF;
 }
-.advantages-section__info-block__additional__wrapper__head {
+.advantages-section__info-block__additional__wrapper__title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.003em;
   display: flex;
   position: relative;
   z-index: 1;
   grid-column: span 5;
 }
+@media (max-width: 768px) {
+  .advantages-section__info-block__additional__wrapper__title {
+    font-size: 1.5rem;
+  }
+}
 .advantages-section__info-block__additional__wrapper__descriptions {
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 130%;
-  letter-spacing: -0.001em;
+  letter-spacing: -0.002em;
 }
 @media (max-width: 768px) {
   .advantages-section__info-block__additional__wrapper__descriptions {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 .advantages-section__info-block__additional__wrapper img {
   float: right;
+}
+.advantages-section__info-block__additional__wrapper__other {
+  background-color: navy;
 }
 
 .new-product-section__head {
@@ -1219,6 +1232,10 @@ body.open-menu header .header-section__info-block__item__burger-logo__burger spa
 }
 .footer-section__info-block__other__description a {
   color: rgba(56, 56, 56, 0.3019607843);
+}
+
+.bp-section {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
