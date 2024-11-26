@@ -140,9 +140,7 @@ body.open-menu{
     header{
         .header-section__info-block__item__burger-logo__burger{
             span{
-                @include mobile{
-                    position: absolute;
-                }
+                position: absolute;
                 &:nth-child(1){
                         transform: rotate(45deg);
                 }

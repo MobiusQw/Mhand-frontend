@@ -1,5 +1,8 @@
 .bp-section{
     &__info-block{
-        text-align: center;
+        grid-column: span 5;
+        &__img {
+            @include image_settings(contain);
+        }
     }
 }

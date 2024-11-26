@@ -20,6 +20,6 @@ export function utils() {
     insert.addEventListener ('click', function(event) {
         body.classList.remove('open-menu')
         event.target.classList.remove('active')
-       // body.style.paddingTop = 0
+        body.style.paddingTop = 0
     })
 }
